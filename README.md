@@ -1,4 +1,4 @@
-<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/android/white.svg" />
+<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/android.svg" />
 
 
 
