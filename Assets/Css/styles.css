@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --text-1: #EDEDED;
+    --Heading-1: #EDEDED ;
+    --nav-color: none;
+    --base-color: #EDEDED; 
+    --button-color: #FED141;
+    --text-button:  #000907; 
+}
+
+body {  
+    background-attachment: fixed; 
+    background-size: auto;
+    background-position: center;
+    color: var(--text-1); 
+    font-family: "Chakra Petch", sans-serif;
+    background-image: url(../images/overlay.jpg);
+}
+    
+
+h1,h2,h3,h4,h5,h6,p {
+    color: var(--text-1);
+    font-weight: 700;
+}
+
+.navbar {
+    background: rgba(190, 194, 194, 0.13);
+    box-shadow: 0 8px 32px 0 rgba( 255, 255, 0, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border-right: 2px solid rgba( 255, 255, 0, 0.1 );
+}
+
+.navbar, .nav-link:hover {
+    color: var(--text-button);
+    text-decoration: none;
+    transition: all 0.6s ease;
+    filter: drop-shadow(5px 5px 5px var(--back-groundcolor));
+}
+img {
+    width: 100%;
+ }
+ a {
+    color: var(--text-1);
+    text-decoration: none;
+ }
+
+ /* Navbar */
+ @media  (min-width: 992px) {
+    .navbar   { width:240px;
+    min-height: 100vh;
+}
+
+.navbar .nav-link.active { 
+    color: var(--button-color);
+}
+
+ }
+ .mypic {
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%) blur(2px);
+    border: 2px var(--text-button);
+    border-radius: 20px;
+ }
+ @media  (max-width: 992px) {
+    .mypic   {
+        filter: none;
+    }
+    .nav-link {
+        color:yellow;
+    }
+}
+ .mypic:hover {
+    filter: none;
+    transition: all 0.5s;
+  }
+  .img-thumbnail {
+    height: 100px;
+    padding: 0;
+    border-radius: 100px;
+}
+.navbar-toggler {
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.05 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 40px;
+    font-size: 50px;
+    color: var(--button-color);
+}
+.navbar-toggler:hover, .navbar-toggler:focus {
+    background-color: var(--text-button);
+    filter: drop-shadow(5px 5px 5px var(--base-color));
+    color: var(--button-color);
+}
+
+
+ #content-wrapper {
+    margin-left: 240px;
+    padding: 1rem;
+ }
+.main-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 3px solid var(--border-color);
+}
+@media (max-width: 978px) {
+    #content-wrapper {
+        margin-left: 0;
+    }
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  0.0000%, 26.2093% { content: ""; }
+  2.2791%, 25.0698% { content: "D"; }
+  3.4186%, 23.9302% { content: "De"; }
+  4.5581%, 22.7907% { content: "Dev"; }
+  5.6977%, 21.6512% { content: "Deve"; }
+  6.8372%, 20.5116% { content: "Devel"; }
+  7.9767%, 19.3721% { content: "Develo"; }
+  9.1163%, 18.2326% { content: "Develop"; }
+  10.2558%, 17.0930% { content: "Develope"; }
+  11.3669%, 16.0110% { content: "Developer";}
+ 
+  30.7674%, 51.2791% { content: ""; }
+  31.9070%, 50.1395% { content: "D"; }
+  33.0465%, 49.0000% { content: "De"; }
+  34.1860%, 47.8605% { content: "Des"; }
+  35.3256%, 46.7209% { content: "Desi"; }
+  36.4651%, 45.5814% { content: "Desig"; }
+  37.6047%, 44.4419% { content: "Design"; }
+  38.5936%, 43.4398% { content: "Designe"; }
+  39.4825%, 42.3287% { content: "Designer"; } 
+
+  54.6977%, 75.2093% { content: ""; }
+  55.8372%, 74.0698% { content: "C"; }
+  56.9767%, 72.9302% { content: "Co"; }
+  58.1163%, 71.7907% { content: "Cod"; }
+  59.2558%, 70.6512% { content: "Code"; }
+  60.3953%, 69.5116% { content: "Coder"; }
+
+  78.6279%, 96.8605% { content: ""; }
+  79.7674%, 95.7209% { content: "T"; }
+  80.9070%, 94.5814% { content: "Te"; }
+  82.0465%, 93.4419% { content: "Tea"; }
+  83.1860%, 92.3023% { content: "Teac"; }
+  84.3256%, 91.1628% { content: "Teach"; }
+  85.2145%, 90.0517% { content: "Teache"; }
+  86.1034%, 89.0470% { content: "Teacher"; }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  color: var(--button-color);
+  animation: typing 20.5s infinite;
+}
+
+.typewriter::after {
+  content: ".";
+  color: var(--button-color);
+  animation: blink 1s linear infinite;
+}
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+  @keyframes sequencePopup {
+    0%, 100% { content: "Developer"; }
+    25% { content: "Designer"; }
+    50% { content: "Coder"; }
+    75% { content: "Teacher"; }
+  }
+
+  .typewriter::before {
+    content: "Developer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+
+
+.btn {
+    padding: 12px 28px;
+    background-color: var(--button-color);
+    color: var(--text-button);
+    font-style: bold;
+    font-weight: 900;
+    border: var(--nav-color);
+    transition: all 0.6s;
+}
+.btn:active {
+    background-color: var(--button-color);
+}
+
+.btn-primary:hover, .btn-primary:focus{
+    background-color: var(--button-color);
+    filter: drop-shadow(5px 5px 5px var(--base-color));
+    color: var(--text-button);
+}
+.custom-bb {
+    font-weight: 700;
+    position: relative;
+}
+.custom-bb::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--text-1);
+    position: absolute;
+    left:0;
+    top: 110%;
+    transition: all 0.4s;
+}
+.custom-bb:hover::after {
+    width: 100%;
+}
+    
+.bg-base {
+    background: rgba( 242, 242, 242, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border-radius: 10px;
+    overflow: hidden;
+}
+ .shadow-effect {
+    transition: all 0.5s;
+ }
+ 
+ .shadow-effect:hover {
+    box-shadow: 10px 5px 15px var(--button-color);
+    color: var(--button-color);
+ }
+ /* icon -- services  */
+ .iconbox {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    gap: 10px;
+    border-radius: 10px 20px;
+    text-shadow: 1px 1px 2px ;
+
+ }
+ .fa-react {
+    color: #61DBFB;
+ }
+ .bi-github {
+    color: #2b3137;
+ }
+ .fa-css3-alt {
+    color: #264de4
+    ;
+ }
+ .fa-html5 {
+    color: #e34c26
+    ;
+ }
+ .fa-node {
+    color: #3c873a
+    ;
+ }
+ .fa-js {
+    color: #f0db4f; 
+ }
+ .fa-shopify {
+    color: #64943E;
+ }
+ .fa-wordpress {
+    color: #00749C;
+ }
+ .fa-stripe {
+    color: #5433FF;
+ }
+ /* card  hover effect */
+  .card-custom {
+    background: rgba( 73, 94, 87, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 17.5px );
+    -webkit-backdrop-filter: blur( 17.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  .card-custom .card-custom-image {
+    overflow: hidden;
+  }
+  .card-custom .card-custom-image img{
+    transition: all 0.6s;
+  }
+.card-custom:hover .card-custom-image img {
+    transform:scale(1.1);
+
+}
+/* contact */
+#contact .form-control {
+    border-color: var(--Heading-1);
+    color: var(--base-color);
+    background: rgba( 242, 242, 242, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border-radius: 10px;
+}
+#contact .form-control:focus{
+    border: var(--button-color);
+    box-shadow: none;
+}
+#contact .form-control::placeholder {
+    color: var(--text-1);
+}
+#contact input.form-control {
+    height: 50px;
+}
+/* social icons  --footer*/
+.social-icons a {
+    height: 50px;
+    width: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 100px;
+    background: rgba(68, 62, 62, 0.575);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+}
+.social-icons a:hover {
+    background-color: var(--text-button);
+    color: var(--button-color);
+}
+
