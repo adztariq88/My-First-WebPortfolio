@@ -95,6 +95,9 @@ img {
     filter: drop-shadow(0.3rem 0.3rem 0.3rem var(--base-color));
     color: var(--button-color);
 }
+.navbar-collapse {
+    padding: 0;
+}
 
 
  #content-wrapper {
