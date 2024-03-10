@@ -2,7 +2,7 @@
 
 
 
-<h1>Overview &#8704</h1>
+<h1>Overview</h1>[![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
 
 My new portfolio website is a showcase of my skills and projects as a front-end web developer. It is built using HTML, CSS, Bootstrap, and incorporates some JavaScript functionalities. The website comprises several key sections:
 
