@@ -27,14 +27,14 @@ h1,h2,h3,h4,h5,h6,p {
 .navbar {
     background: rgba(190, 194, 194, 0.13);
     box-shadow: 0 8px 32px 0 rgba( 255, 255, 0, 0.37 );
-    backdrop-filter: blur( 4px );
+    backdrop-filter: blur( 50px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border-right: 2px solid rgba( 255, 255, 0, 0.1 );
 }
 
-.navbar, .nav-link:hover {
-    color: var(--text-button);
+ .nav-link:hover {
+    color: var(--button-color);
     text-decoration: none;
     transition: all 0.6s ease;
     filter: drop-shadow(5px 5px 5px var(--back-groundcolor));
@@ -52,12 +52,12 @@ img {
     .navbar   { width:240px;
     min-height: 100vh;
 }
-
+ }
 .navbar .nav-link.active { 
     color: var(--button-color);
 }
 
- }
+
  .mypic {
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%) blur(2px);
@@ -67,9 +67,8 @@ img {
  @media  (max-width: 992px) {
     .mypic   {
         filter: none;
-    }
-    .nav-link {
-        color:yellow;
+        width: 100px;
+        height: 100px;
     }
 }
  .mypic:hover {
@@ -83,9 +82,8 @@ img {
 }
 .navbar-toggler {
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.05 );
-    backdrop-filter: blur( 10px );
+    backdrop-filter: blur( 100px );
     -webkit-backdrop-filter: blur( 10px );
-    border-radius: 40px;
     font-size: 50px;
     color: var(--button-color);
 }
