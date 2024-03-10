@@ -84,7 +84,7 @@ img {
     border-radius: 100px;
 }
 .bi .navbar-toggler {
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.05 );
+    box-shadow: 0 0.5rem 2rem 0 rgba( 31, 38, 135, 0.05 );
     backdrop-filter: blur( 100px );
     -webkit-backdrop-filter: blur( 10px );
     font-size: 2.5rem;
@@ -92,7 +92,7 @@ img {
 }
 .navbar-toggler:hover, .navbar-toggler:focus {
     background-color: var(--text-button);
-    filter: drop-shadow(5px 5px 5px var(--base-color));
+    filter: drop-shadow(0.3rem 0.3rem 0.3rem var(--base-color));
     color: var(--button-color);
 }
 
