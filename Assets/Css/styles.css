@@ -73,20 +73,21 @@ img {
     }
     
 }
+
  .mypic:hover {
     filter: none;
     transition: all 0.5s;
   }
   .img-thumbnail {
-    height: 100px;
-    padding: 0;
+    height: 60px;
+    width: 60px;
     border-radius: 100px;
 }
-.navbar-toggler {
+.bi .navbar-toggler {
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.05 );
     backdrop-filter: blur( 100px );
     -webkit-backdrop-filter: blur( 10px );
-    font-size: 50px;
+    font-size: 40px;
     color: var(--button-color);
 }
 .navbar-toggler:hover, .navbar-toggler:focus {
