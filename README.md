@@ -2,7 +2,7 @@
 
 
 
-<h1>Overview</h1>
+<h1 style="color: #f8f8f8">Overview</h1>
 
 My new portfolio website is a showcase of my skills and projects as a front-end web developer. It is built using HTML, CSS, Bootstrap, and incorporates some JavaScript functionalities. The website comprises several key sections:
 
