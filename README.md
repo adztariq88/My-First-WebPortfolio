@@ -2,7 +2,7 @@
 
 
 
-<h1 style="color: #6a5acd">Overview</h1>
+<h1 >Overview</h1>
 
 My new portfolio website is a showcase of my skills and projects as a front-end web developer. It is built using HTML, CSS, Bootstrap, and incorporates some JavaScript functionalities. The website comprises several key sections:
 
@@ -10,7 +10,7 @@ My new portfolio website is a showcase of my skills and projects as a front-end 
 <h1>Homepage:</h1>
 
 
-<p>The homepage serves as the introduction to my portfolio. It features a clean and visually appealing layout designed using HTML and CSS. The homepage includes a brief introduction about me and my expertise as a front-end web developer.
+<p style="color: #6a5acd">The homepage serves as the introduction to my portfolio. It features a clean and visually appealing layout designed using HTML and CSS. The homepage includes a brief introduction about me and my expertise as a front-end web developer.
 
 <br>
 <h1>Services Page:</h1>
