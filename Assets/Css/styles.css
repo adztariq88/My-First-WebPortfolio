@@ -68,8 +68,8 @@ img {
  @media  (max-width: 992px) {
     .mypic   {
         filter: none;
-        width: 100px;
-        height: 70px;
+        width: 6.25rem;
+        height: 4.375rem;
     }
     
 }
