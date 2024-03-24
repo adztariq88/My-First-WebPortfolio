@@ -173,7 +173,8 @@ img {
 .typewriter::before {
   content: "";
   color: var(--button-color);
-  animation: typing 20.5s infinite;
+  animation: typing 12s infinite;
+  font-size: 1.5em;;
 }
 
 .typewriter::after {
