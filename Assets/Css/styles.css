@@ -36,8 +36,9 @@ p {
  color: #EBE4D1;
 }
 h2 {
-    color: #B4B4B3;
+    color: #E8AA42; 
 }
+/* brightter orange for h2 */
 .header {
     color: var(--button-color);
 }
