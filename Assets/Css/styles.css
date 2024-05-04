@@ -1,22 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --text-1: #EDEDED;
-    --Heading-1: #EDEDED ;
+    --text-1: #F9DBBB;
+    --Heading-1: #F9DBBB ;
     --nav-color: none;
-    --base-color: #EDEDED; 
-    --button-color: #FED141;
-    --text-button:  #000907; 
+    --base-color: #F9DBBB; 
+    --button-color: #FF0303;
+    --text-button:  #F9DBBB; 
+    --shadow: #4E6E81;
 }
 
 body {  
     
     background-attachment: fixed; 
-    background-size: auto;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--text-1); 
-    font-family: "Chakra Petch", sans-serif;
-    background-image: url(../images/overlay.jpg);
+    background-color: #0C2D57; 
+    font-family: "Noto Sans", sans-serif;
+    background-image: url(../images/navyblue.png);
 }
     
 
@@ -24,17 +26,32 @@ h1,h2,h3,h4,h5,h6,p {
     color: var(--text-1);
     font-weight: 700;
 }
-
+.name {
+    font-size: 1.3em;
+    color: var(--button-color);
+}
+p {
+ font-size: 1.3em;
+ color: #EBE4D1;
+}
+h2 {
+    color: #B4B4B3;
+}
+.header {
+    color: var(--button-color);
+}
 .navbar {
     background: rgba(190, 194, 194, 0.13);
-    box-shadow: 0 8px 32px 0 rgba( 255, 255, 0, 0.37 );
-    backdrop-filter: blur( 50px );
+    box-shadow: 0 8px 32px 0 var(--shadow);
+    backdrop-filter: blur( 5px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border-right: 2px solid rgba( 255, 255, 0, 0.1 );
     padding: 0;
 }
-
+.nav-link {
+    color: var(--base-color);
+}
  .nav-link:hover {
     color: var(--button-color);
     text-decoration: none;
@@ -51,7 +68,7 @@ img {
 
  /* Navbar */
  @media  (min-width: 992px) {
-    .navbar   { width:240px;
+    .navbar   { width:340px;
     min-height: 100vh;
 }
  }
@@ -83,11 +100,13 @@ img {
     height: 3.75rem;
     width: 3.75rem;
     border-radius: 100px;
+    background-color: #0C2D57;
+    border: var(--button-color);
 }
 .bi .navbar-toggler {
     box-shadow: 0 0.5rem 2rem 0 rgba( 31, 38, 135, 0.05 );
     backdrop-filter: blur( 100px );
-    -webkit-backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 1px );
     font-size: 2.5rem;
     color: var(--button-color);
 }
@@ -103,7 +122,7 @@ img {
 
  #content-wrapper {
     margin-top: 0px;
-    margin-left: 240px;
+    margin-left: 340px;
     padding: 1rem;
  }
 .main-content {
@@ -174,7 +193,7 @@ img {
   content: "";
   color: var(--button-color);
   animation: typing 12s infinite;
-  font-size: 1.5em;;
+  font-size: 1.3em;;
 }
 
 .typewriter::after {
@@ -203,22 +222,26 @@ img {
 
 
 .btn {
-    padding: 12px 28px;
+    padding: 15px 18px;
+    margin: 0px 3px;
     background-color: var(--button-color);
     color: var(--text-button);
     font-style: bold;
     font-weight: 900;
+    font-size: 1.5em;
     border: var(--nav-color);
-    transition: all 0.6s;
+    transition: all 1s ease;
+    border-radius: 30px;
 }
 .btn:active {
-    background-color: var(--button-color);
+    background-color: var(--button-color) !important;
 }
 
 .btn-primary:hover, .btn-primary:focus{
-    background-color: var(--button-color);
+    background-color: var(--shadow);
     filter: drop-shadow(5px 5px 5px var(--base-color));
-    color: var(--text-button);
+    color: var(--button-color);
+    transition: all 0.7s ease !important;
 }
 .custom-bb {
     font-weight: 700;
@@ -228,7 +251,7 @@ img {
     content: "";
     width: 0%;
     height: 2px;
-    background-color: var(--text-1);
+    background-color: var(--button-color);
     position: absolute;
     left:0;
     top: 110%;
@@ -247,12 +270,12 @@ img {
     overflow: hidden;
 }
  .shadow-effect {
-    transition: all 0.5s;
+    transition: all 0.7s;
  }
  
  .shadow-effect:hover {
-    box-shadow: 10px 5px 15px var(--button-color);
-    color: var(--button-color);
+    box-shadow: 10px 5px 15px var(--shadow);
+    color: var(--shadow);
  }
  /* icon -- services  */
  .iconbox {
@@ -261,7 +284,7 @@ img {
     display: flex;
     align-items: center;
     font-size: 50px;
-    gap: 10px;
+    gap: 20px;
     border-radius: 10px 20px;
     text-shadow: 1px 1px 2px ;
 
@@ -344,13 +367,15 @@ img {
     align-items: center;
     font-size: 30px;
     border-radius: 100px;
-    background: rgba(68, 62, 62, 0.575);
+    background: var(--button-color);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 18px );
     -webkit-backdrop-filter: blur( 18px );
+    margin: 0.3rem;
 }
 .social-icons a:hover {
-    background-color: var(--text-button);
+    background-color: var(--shadowing);
     color: var(--button-color);
+    transition: all 0.8s;
 }
 
