@@ -5,9 +5,10 @@
     --Heading-1: #F9DBBB ;
     --nav-color: none;
     --base-color: #F9DBBB; 
-    --button-color: #FF0303;
+    --button-color: #B8621B;
     --text-button:  #F9DBBB; 
     --shadow: #4E6E81;
+    --button-text: #112B3C;
 }
 
 body {  
@@ -225,7 +226,7 @@ img {
     padding: 15px 18px;
     margin: 0px 3px;
     background-color: var(--button-color);
-    color: var(--text-button);
+    color: var(--button-text);
     font-style: bold;
     font-weight: 900;
     font-size: 1.5em;
@@ -372,9 +373,11 @@ img {
     backdrop-filter: blur( 18px );
     -webkit-backdrop-filter: blur( 18px );
     margin: 0.3rem;
+    color: var(--button-text);
 }
 .social-icons a:hover {
     background-color: var(--shadowing);
+    background: var(--shadow);
     color: var(--button-color);
     transition: all 0.8s;
 }
